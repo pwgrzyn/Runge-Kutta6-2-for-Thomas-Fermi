@@ -1,6 +1,5 @@
 import numpy as np 
 from scipy.optimize import fsolve
-import matplotlib.pyplot as plt
 class ode_solver:
     def __init__(self,system,init_cond,time,method='RK62',rtol=1e-4,beta=0.9):
         """ ODE Solver based on Runge-Kutta implicit adaptive step methods
