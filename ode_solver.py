@@ -67,6 +67,7 @@ class ode_solver:
             self.nstages=2
             self.order=4
             self.order_emb=3
+        self.solve()
     def _find_k(self,K,h):
         """ setting up equations for nonlinear solver"""
         eq=np.zeros(shape=(self.nstages,self.sys_size))
